@@ -64,7 +64,7 @@ while game_running_flag:
     
     #check for boudaries
     if 0 <= game_characteristics["player"]["position"]["x"] + position_delta and  game_characteristics["player"]["position"]["x"] + position_delta + game_tank_sprite.get_width() <= game_characteristics["cpu"]["position"]["x"]:
-        game_characteristics["player"]["position"]["x"] + position_delta
+        game_characteristics["player"]["position"]["x"] += position_delta
 
     game_characteristics["player"]["position"]["x"] += position_delta
 
