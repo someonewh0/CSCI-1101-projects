@@ -63,9 +63,9 @@ while game_running_flag:
         position_delta = 1
     
     #check for boudaries
-    if 0 <= game_characteristics["player"]["position"]["x"] + position_delta and  game_characteristics["player"]["position"]["x"] + position_delta + game_tank_sprite.get_width <= game_characteristics["cpu"]["position"]["x"]:
+    if 0 <= game_characteristics["player"]["position"]["x"] + position_delta and  game_characteristics["player"]["position"]["x"] + position_delta + game_tank_sprite.get_width() <= game_characteristics["cpu"]["position"]["x"]:
         game_characteristics["player"]["position"]["x"] + position_delta
-        
+
     game_characteristics["player"]["position"]["x"] += position_delta
 
     game_display.fill(game_characteristics["sky"]["color"])
